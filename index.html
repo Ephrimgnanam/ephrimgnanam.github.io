@@ -1,15 +1,99 @@
 <!DOCTYPE html>
 <div class="nav">
-    <a href="Home.html">Home</a>
-    <a href="About.html">About</a>
-    <a href="Blogs.html">Blogs</a>
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="blogs.html">Blogs</a>
 </div>
-<html>
+<html lang="en">
 <head>
-    <title>ephrimgnanam.github.io</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - HolyStrike</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Courier New', monospace;
+            background-color: black;
+            color: #00FF00;
+            overflow-x: hidden;
+        }
+
+        .top-banner {
+            text-align: center;
+            font-size: 1.5rem;
+            padding: 10px;
+            background: #111;
+            color: #FF4500;
+        }
+
+        .nav {
+            position: fixed;
+            top: 10px; right: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+
+        .nav a {
+            color: #00FF00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.5rem;
+        }
+
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: url('https://prd-sc102-cdn.rtx.com/raytheon/-/media/ray/what-we-do/integrated-air-and-missile-defense/nasams/2023-03/images/nasams-8-cred-kda-mediafoto-2015_16x9.jpg') no-repeat center center fixed;
+            background-size: cover;
+            position: relative;
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        .main-title {
+            position: relative;
+            font-size: 3rem;
+            text-shadow: 0 0 10px #00FF00;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.85);
+            border-top: 3px solid #00FF00;
+            font-size: 1.5rem;
+        }
+    </style>
 </head>
 <body>
-    <h1>Is it going good?</h1>
-    <p>Hello ?</p>
+
+<div class="top-banner">✝ In Christ alone my hope is found</div>
+
+<div class="nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="blogs.html">Blogs</a>
+</div>
+
+<header>
+    <h1 class="main-title">Music, Malware, Militraty, and Missiles</h1>
+</header>
+
+<footer>
+    <p>&copy; 2025 PhantomForge | Engineered in the Dark</p>
+    <p class="footer-text">Arrear இல்லாத மனிதன் அரைமனிதன்</p>
+</footer>
+
 </body>
 </html>

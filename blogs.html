@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<div class="nav">
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="blogs.html">Blogs</a>
+</div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs - Terminal UI</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Courier New', monospace;
+            background-color: black;
+            color: #00FF00;
+            overflow-x: hidden;
+            padding: 20px;
+        }
+
+        .nav {
+            position: fixed;
+            top: 10px; right: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+
+        .nav a {
+            color: #00FF00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.5rem;
+        }
+
+        .terminal {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 40px;
+            width: 70%;
+            margin: 150px auto;
+            border-radius: 15px;
+            border: 3px solid #00FF00;
+            font-size: 1.8rem;
+            white-space: pre-wrap;
+        }
+
+        .blog-entry {
+            opacity: 0;
+            display: block;
+            font-size: 2rem;
+            font-family: 'Courier New', monospace;
+            overflow: hidden;
+            white-space: nowrap;
+            width: 0;
+            border-right: 3px solid #00FF00;
+            display: inline-block;
+            animation: typing 3s steps(30, end) forwards, blink-caret 0.5s step-end infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0; opacity: 1; }
+            to { width: 100%; opacity: 1; }
+        }
+
+        @keyframes blink-caret {
+            50% { border-color: transparent; }
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.85);
+            border-top: 3px solid #00FF00;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="blogs.html">Blogs</a>
+</div>
+
+<div class="terminal">
+    <p class="blog-entry">$ ls - Blog Posts</p>
+    <p class="blog-entry">[1] <a href="how-to-track-aircraft-carriers.html">How to Track Aircraft Carriers Like a Pro</a></p>
+</div>
+
+<footer>
+    <p>&copy; 2025 PhantomForge | Engineered in the Dark</p>
+    <p class="footer-text"Aarrear இல்லாத மனிதன் அரைமனிதன்</p>
+</footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const entries = document.querySelectorAll(".blog-entry");
+        entries.forEach((entry, index) => {
+            setTimeout(() => {
+                entry.style.opacity = 1;
+            }, index * 1500);
+        });
+    });
+</script>
+
+</body>
+</html>
